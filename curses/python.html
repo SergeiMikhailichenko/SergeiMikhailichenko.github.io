@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for code learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">CodingLearn</h2>
+        <nav class="navigation">
+            <a class="home-link">Home</a>
+            <a class="languages-link">Languages</a>
+            <a class="about-link">About</a>
+            <a class="contact-link">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav> 
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="login" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a>Forgot password?</a>
+                </div>
+                <button type="submit" class="btn" id="check">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btnRegister">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="Home">
+<!-- start -->
+        <div class="left-navigation-box">
+            <h3>Навигация</h3>
+
+            <div class="nav-text">
+                <button class="studys-link" id="1study"><ion-icon name="document-text"></ion-icon>&nbsp;1. Введение в Python
+                </button>        
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="2study"><ion-icon name="document-text"></ion-icon>&nbsp;2. Переменные и типы
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="3study"><ion-icon name="document-text"></ion-icon>&nbsp;3. Условия и циклы
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="4study"><ion-icon name="document-text"></ion-icon>&nbsp;4. Функции
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="5study"><ion-icon name="document-text"></ion-icon>&nbsp;5. Работа с файлами
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="6study"><ion-icon name="document-text"></ion-icon>&nbsp;6. Структуры данных
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="7study"><ion-icon name="document-text"></ion-icon>&nbsp;7. Закрепление и практика
+                </button>
+            </div>
+            <div class="nav-text">
+                <button class="studys-link" id="8study"><ion-icon name="document-text"></ion-icon>&nbsp;8. Подведение итогов
+                </button>
+            </div>
+        </div>
+
+        <div class="lang-topics" id="##">
+            <div class="lang-topics-elements">
+                <div class="left-elements">
+                    <h2>Урок 1: введение в Python</h2>
+                </div>
+                <span class="right-elements">
+                    <ion-icon name="logo-python" style="color: #2b5b84;"></ion-icon>
+                </span>
+            </div>
+        </div>
+
+        <div class="lang-head-elements">
+            <h2>Введение</h2>
+            <div class="paragraph">
+                <p>Добро пожаловать в первый урок курса "Изучение Python для начинающих"! В этом уроке мы познакомимся с основами Python и напишем нашу первую программу.</p>
+            </div>
+            <h2>Что такое Python?</h2>
+            <div class="paragraph">
+                <p>Python - это высокоуровневый язык программирования, разработанный с акцентом на простоту и читаемость кода. Он позволяет разрабатывать разнообразные программы, начиная от простых скриптов до сложных веб-приложений и научных вычислений.</p>
+            </div>
+            <h2>Первая программа "Hello, World!"</h2>
+            <div class="paragraph">
+                <p>В мире программирования "Hello, World!" - это традиционная первая программа, которая выводит на экран фразу "Hello, World!". Давайте напишем ее в Python:</p>
+            </div>
+            
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-btn"></span>
+                    <span class="terminal-btn"></span>
+                    <span class="terminal-btn"></span>
+                </div>
+                <code class="label-faq"><span class="color-yellow">print</span>(<span class="color-green">"Hello, World!"</span>)</code>
+            </div>    
+            <h2>Как это работает?</h2>
+            <div class="paragraph">
+                <li>Ключевое слово <span class="black-bold">'print'</span> используется для вывода информации на экран.
+                </li>
+                <li>Мы передаем строку <span class="black-bold">"Hello, World!"</span> в функцию <span class="black-bold">'print()'</span>. Строка - это последовательность символов, заключенных в кавычки.
+                </li>
+                <li>Когда мы запускаем программу, Python интерпретирует код и выводит на экран текст <span class="black-bold">"Hello, World!"</span>.
+                </li>
+            </div>
+            <h2>Запуск программы</h2>
+            <div class="paragraph">
+                <p>В мире программирования "Hello, World!" - это традиционная первая программа, которая выводит на экран фразу "Hello, World!". Давайте напишем ее в Python:</p>
+                <div class="paragraph">
+                    <li>Откройте текстовый онлайн редактор (например: <a href="https://www.python.org/shell/" target="_blank">www.python.org</a>).
+                    </li>
+                    <li>Введите код программы <span class="black-bold">"Hello, World!"</span> и нажмите Enter.
+                    </li>
+                    <li>Вы увидите вывод <span class="black-bold">"Hello, World!"</span> в командной строке.
+                    </li>
+                </div>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-btn"></span>
+                    <span class="terminal-btn"></span>
+                    <span class="terminal-btn"></span>
+                </div>
+                <code class="label-faq"><span class="color-yellow">print</span>(<span class="color-green">"Hello, World!"</span>)</code>
+                <code class="label-faq">Hello, World!</code>
+            </div>
+            <div class="next-page">
+                <a href="lesson2.html">
+                    <button class="btnNext-page">Далее</button>
+                </a>
+            </div>
+        </div>
+        
+<!-- finish -->
+    </div>
+
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
