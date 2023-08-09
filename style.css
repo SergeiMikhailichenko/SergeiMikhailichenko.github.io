@@ -14,8 +14,8 @@ body {
     align-items: center;
     min-height: 100vh;
     /* background:  rgb(129, 124, 85); */
-    /* background: url('img/Blur-4.png'); */
-    background-color: #1c1e21;
+    background: url('img/Blur-4.png');
+    /* background-color: #1c1e21; */
     /* background: rgb(170, 200, 167); */
     background-size: cover;
     background-position: center;
