@@ -100,7 +100,7 @@ const contentPythonPage = `
     <div class="lang-topics-elements">
         <div class="left-elements">
             <h2>Курс: Изучение Python для начинающих</h2>
-            <a href="./python/lesson1.html">
+            <a href="./curses/python.html">
                 <button class="btnStartLang">Начать</button>
             </a>
         </div>
