@@ -14,7 +14,7 @@ const contentPage1 = `
 <h3>Навигация</h3>
 
 <div class="nav-text">
-    <button class="studys-link" id="1study"><ion-icon name="document-text"></ion-icon>&nbsp;1. Введение в Python
+    <button class="studys-link" id="1study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;1. Введение в Python
     </button>        
 </div>
 <div class="nav-text">
@@ -126,7 +126,7 @@ const contentPage2 = `
         </button>        
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="2study"><ion-icon name="document-text"></ion-icon>&nbsp;2. Переменные и типы
+        <button class="studys-link" id="2study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;2. Переменные и типы
         </button>
     </div>
     <div class="nav-text">
@@ -287,7 +287,7 @@ const contentPage3 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="3study"><ion-icon name="document-text"></ion-icon>&nbsp;3. Условия и циклы
+        <button class="studys-link" id="3study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;3. Условия и циклы
         </button>
     </div>
     <div class="nav-text">
@@ -441,7 +441,7 @@ const contentPage4 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="4study"><ion-icon name="document-text"></ion-icon>&nbsp;4. Функции
+        <button class="studys-link" id="4study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;4. Функции
         </button>
     </div>
     <div class="nav-text">
@@ -620,7 +620,7 @@ const contentPage5 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="5study"><ion-icon name="document-text"></ion-icon>&nbsp;5. Работа с файлами
+        <button class="studys-link" id="5study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;5. Работа с файлами
         </button>
     </div>
     <div class="nav-text">
@@ -777,7 +777,7 @@ const contentPage6 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="6study"><ion-icon name="document-text"></ion-icon>&nbsp;6. Структуры данных
+        <button class="studys-link" id="6study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;6. Структуры данных
         </button>
     </div>
     <div class="nav-text">
@@ -980,7 +980,7 @@ const contentPage7 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="7study"><ion-icon name="document-text"></ion-icon>&nbsp;7. Закрепление и практика
+        <button class="studys-link" id="7study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;7. Закрепление и практика
         </button>
     </div>
     <div class="nav-text">
@@ -1119,7 +1119,7 @@ const contentPage8 = `
         </button>
     </div>
     <div class="nav-text">
-        <button class="studys-link" id="8study"><ion-icon name="document-text"></ion-icon>&nbsp;8. Подведение итогов
+        <button class="studys-link" id="8study" style="border-radius: 5px; background-color:#203a4f; border: 1px;"><ion-icon name="document-text"></ion-icon>&nbsp;8. Подведение итогов
         </button>
     </div>
 </div>
