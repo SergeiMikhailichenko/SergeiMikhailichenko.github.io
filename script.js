@@ -68,16 +68,16 @@ const contentAboutPage = `
     <p>Мы предлагаем удобный и интерактивный опыт обучения, чтобы вы могли определиться с выбором языка программирования, близкого вашим интересам. Освойте основы Python, JavaScript, Java, C++ и многих других языков с помощью учебных материалов и интерактивных заданий. Присоединяйтесь к нашему сообществу страстных учеников программирования, чтобы открыть для себя бесконечные возможности в мире технологий. Регистрируйтесь сейчас и начните свой увлекательный путь в программировании!</p>
     <div class="code-logos">
         <span class="code-logo">
-            <ion-icon name="logo-python"></ion-icon>
+            <ion-icon name="logo-python" style="color: #2b5b84;"></ion-icon>
         </span>
         <span class="code-logo">
-            <ion-icon name="logo-javascript"></ion-icon>
+            <ion-icon name="logo-javascript" style="color: #F7DF1E; background-color: #000;"></ion-icon>
         </span>
         <span class="code-logo">
             <ion-icon name="logo-css3"></ion-icon>
         </span>
         <span class="code-logo">
-            <ion-icon name="logo-html5"></ion-icon>
+            <ion-icon name="logo-html5" style="color: #FF6600;"></ion-icon>
         </span>
     </div>
 </div>
