@@ -1092,7 +1092,7 @@ const contentPage8 = `
     <div class="lang-topics" id="##">
         <div class="lang-topics-elements">
             <div class="left-elements">
-                <h2>Итоговый проект и завершение курса</h2>
+                <h2>Урок 8: Итоговый проект и завершение курса</h2>
             </div>
             <span class="right-elements">
                 <ion-icon name="logo-python" style="color: #2b5b84;"></ion-icon>
