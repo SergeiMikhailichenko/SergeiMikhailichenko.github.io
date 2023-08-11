@@ -110,11 +110,6 @@ const contentPage1 = `
     <code class="label-faq"><span class="color-yellow">print</span>(<span class="color-green">"Hello, World!"</span>)</code>
     <code class="label-faq">Hello, World!</code>
 </div>
-<div class="next-page">
-    <a href="lesson2.html">
-        <button class="btnNext-page">Далее</button>
-    </a>
-</div>
 </div>
 `;
 const contentPage2 = `
@@ -267,11 +262,6 @@ const contentPage2 = `
             <div class="paragraph">
                 <p>Отлично! Вы только что ознакомились с работой переменных и типов данных в Python. В следующем уроке мы продолжим исследование других концепций языка. Продолжайте практиковаться и успешного обучения!</p>
             </div>
-            <div class="next-page">
-                <a href="lesson3.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
-            </div>
         </div>
 `;
 const contentPage3 = `
@@ -416,11 +406,6 @@ const contentPage3 = `
             </div>
             <div class="paragraph">
                 <p>Отлично! Вы только что изучили условия и циклы в Python. Они являются важными инструментами, которые позволяют управлять потоком выполнения программы и обрабатывать повторяющиеся задачи. Продолжайте практиковаться, и в следующем уроке мы узнаем о функциях в Python. Удачи!</p>
-            </div>
-            <div class="next-page">
-                <a href="lesson4.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
             </div>
         </div>
 `;
@@ -592,11 +577,6 @@ const contentPage4 = `
             <div class="paragraph">
                 <p>Прекрасно! Вы только что изучили функции в Python. Они позволяют разбивать программу на более мелкие блоки кода, что упрощает его чтение и позволяет повторно использовать функции для разных задач. Продолжайте практиковаться, и в следующем уроке мы узнаем о работе с файлами в Python. Удачи!</p>
             </div>
-            <div class="next-page">
-                <a href="lesson5.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
-            </div>
         </div>
 `;
 const contentPage5 = `
@@ -744,11 +724,6 @@ const contentPage5 = `
             </div>
             <div class="paragraph">
                 <p>Отлично! Теперь вы знаете, как работать с файлами в Python. Работа с файлами - важный аспект программирования, который позволяет сохранять и обрабатывать данные внутри программы. Продолжайте практиковаться, и в следующем уроке мы узнаем о работе со списками и словарями в Python. Удачи!</p>
-            </div>
-            <div class="next-page">
-                <a href="lesson6.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
             </div>
         </div>
 `;
@@ -944,11 +919,6 @@ const contentPage6 = `
             <div class="paragraph">
                 <p>Отлично! Теперь вы знаете о работе со списками и словарями в Python. Эти структуры данных предоставляют множество возможностей для хранения и обработки информации. Продолжайте практиковаться, и в следующем уроке мы узнаем о модулях и функциях стандартной библиотеки Python. Удачи!</p>
             </div>
-            <div class="next-page">
-                <a href="lesson7.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
-            </div>
         </div>
 `;
 const contentPage7 = `
@@ -1079,11 +1049,6 @@ const contentPage7 = `
             <div class="paragraph">
                 <p>Отлично! Теперь вы знаете о модулях и стандартной библиотеке Python. Это мощные инструменты, которые расширяют функциональность Python и помогают решать различные задачи. Продолжайте практиковаться, и в следующем уроке мы узнаем о работе с исключениями (ошибками) в Python. Удачи!</p>
             </div>
-            <div class="next-page">
-                <a href="lesson8.html">
-                    <button class="btnNext-page">Далее</button>
-                </a>
-            </div>
         </div>
 `;
 const contentPage8 = `
@@ -1185,11 +1150,6 @@ const contentPage8 = `
             </div>
             <div class="paragraph">
                 <p>Удачи в вашем дальнейшем путешествии в мире программирования!</p>
-            </div>
-            <div class="next-page">
-                <a href="../../index.html">
-                    <button class="btnNext-page">Home</button>
-                </a>
             </div>
         </div>
 `;
