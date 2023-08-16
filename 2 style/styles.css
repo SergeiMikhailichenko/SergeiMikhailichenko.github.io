@@ -4,7 +4,8 @@ body {
 	flex-direction: column;
 	background-color: #121212;
 	min-height: 100vh;
-	font-family: 'Love Ya Like A Sister', cursive;
+	/* font-family: 'Love Ya Like A Sister', cursive; */
+	font-family: IBM Plex Serif;
 }
 
 header {
