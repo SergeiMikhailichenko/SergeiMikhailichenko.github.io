@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     /* font-weight: bold; */
 }
 
@@ -203,7 +203,7 @@ nav ul li a {
 	}
 
 	.footer-text {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 }
