@@ -58,9 +58,7 @@ nav ul li a {
 @media (max-width: 768px) {
 /* хеадер с меню */
 
-	header {
-		z-index: 999;
-	}
+
 	.logo {
 		display: flex;
 		align-items: center;
@@ -71,6 +69,7 @@ nav ul li a {
 		width: 100%;
 		left: 50%;
 		transform: translate(-50%, 0);
+		z-index: 900;
 	}
     .nav-links {
         display: none;
@@ -88,21 +87,26 @@ nav ul li a {
     .nav-links.active {
         display: flex;
 		/* flex-direction: column; */
-		position: fixed;
+		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: max-content;
 		left: 0;
 		top: 100px;
 		/* gap: 3rem; */
 		/* font-size: 3rem; */
-		z-index: 999;
+		z-index: 888;
+		flex: 2;
     }
 
+	.main.deactive {
+		display: none;
+	}
     .burger {
         display:flex;
 		align-items: center;
 		position: fixed;
 		right: 30px;
+		z-index: 990;
     } 
 	.wrapper {
 		display: none;
