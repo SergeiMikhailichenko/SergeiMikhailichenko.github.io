@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #121212;
+	min-height: 100vh;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 0 20px;
+    color: #fff;
+	height: 100px;
+
+}
+
+.logo {
+    font-size: 3rem;
+    /* font-weight: bold; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+/* хеадер с меню */
+
+	header {
+		z-index: 999;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #121212;
+		position: fixed;
+		height: 100px;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #121212;
+        position: fixed;
+        top: 100px;
+        transition: all 0.3s ease-in-out;
+    }
+
+	nav ul {
+		display: block;
+	}
+
+    .nav-links.active {
+        display: flex;
+		/* flex-direction: column; */
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 100px;
+		/* gap: 3rem; */
+		/* font-size: 3rem; */
+		z-index: 999;
+    }
+
+    .burger {
+        display:flex;
+		align-items: center;
+		position: fixed;
+		right: 30px;
+    } 
+	.wrapper {
+		display: none;
+
+	}
+
+/* Контент  */
+
+
+	.content-bord {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		/* Надо будет подогнать по высоте */
+		/* top: 120px; */
+		left: 50%;
+		transform: translate(-50%, 0%);
+		justify-content: center;
+		background-color: #423E47;
+		height: min-content;
+		width: 80%;
+		border-radius: 20px;
+		padding: 10px;
+		color: #FFFFFF;
+		margin: 30px 0;
+	}
+
+	.title-bord {
+		width: 100%;
+		font-size: 2rem;
+	}
+
+	.line-first {
+		width: 100%;
+		height: 1px;
+		background-color: #514D56;
+		margin: 10px 0;
+	}
+
+	.lang-in-list {
+		display: flex;
+		cursor: pointer;
+	}
+
+	.logo-lang {
+		display: flex;
+		font-size: 5rem;
+		align-items: center;
+		margin-right: 20px;
+	}
+
+	.text-program-in-list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.name-program {
+		font-size: 2rem;
+	}
+
+	.value-program {
+		font-size: 1.2rem;
+	}
+
+
+	.line-second {
+		position: relative;
+		width: calc(100% - 70px);
+		left: 70px;
+		height: .5px;
+		background-color: #514D56;
+		margin: 10px 0;
+	}
+
+	.main {
+		flex: 1;
+	}
+
+	.footer {
+		display:flex;
+		color: #fff;
+		padding-top: 30px;
+    	padding-bottom: 20px;
+		width: 100%;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.elements-social-media {
+		display: flex;
+		justify-content: space-around;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.footer-text {
+		font-size: 2rem;
+	}
+
+}
