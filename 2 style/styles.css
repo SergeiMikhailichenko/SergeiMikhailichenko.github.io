@@ -71,6 +71,7 @@ nav ul li a {
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 900;
+		font-family: 'Love Ya Like A Sister', cursive;
 	}
     .nav-links {
         display: none;
@@ -134,10 +135,11 @@ nav ul li a {
 		color: #FFFFFF;
 		margin: 30px 0;
 	}
-
+	
 	.title-bord {
 		width: 100%;
 		font-size: 2rem;
+		font-family: 'Love Ya Like A Sister', cursive;
 	}
 
 	.line-first {
@@ -166,14 +168,15 @@ nav ul li a {
 		align-content: center;
 		align-items: center;
 		overflow: hidden;
+		
 	}
-
+	
 	.name-program {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.value-program {
-		font-size: 1.2rem;
+		font-size: .8rem;
 	}
 
 
@@ -208,6 +211,7 @@ nav ul li a {
 	}
 
 	.footer-text {
+		font-family: 'Love Ya Like A Sister', cursive;
 		font-size: 1rem;
 	}
 
