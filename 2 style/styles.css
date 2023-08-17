@@ -229,6 +229,23 @@ nav ul li a {
 }
 /* конец */
 
+/* Кнопка старта обучения */
+.btn-start {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;
+	width: 15rem;
+	height: 5.3125rem;
+	border-radius: 1.5rem;
+	border: 1px solid #FFD700;
+	background: #121212;
+}
+/*  */
+
 	.footer {
 		display:flex;
 		color: #fff;
