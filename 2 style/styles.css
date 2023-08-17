@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 /* хеадер с меню */
 
 
@@ -166,19 +166,19 @@ nav ul li a {
 	.text-program-in-list {
 		width: 100%;
 		display: flex;
-		flex-wrap: wrap;
-		align-content: center;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
 		overflow: hidden;
 		
 	}
 	
 	.name-program {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 
 	.value-program {
-		font-size: .8rem;
+		font-size: 1rem;
 	}
 
 
