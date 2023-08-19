@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Adaptive Header</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CodingLearns</div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <div class="content-bord">
+                    <div class="title-bord">Menu</div>
+                    <div class="line-first"></div>
+                    
+                    <li><a href="../index.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="home" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Home</div>
+                            </div>
+                        </div>
+                    </a></li>
+
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../about.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="information-circle" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">About</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="#">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="construct" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Services</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../contacts.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="share-social" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Contact</div>
+                            </div>
+                        </div>
+                    </a></li>
+                </div>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="main white">
+        <div class="elements-menu">
+            <div class="logo-lang"><ion-icon name="logo-python" style="color: #4454E5;"></ion-icon></div>
+            <div class="title">Урок 2: Переменные и типы данных в Python</div>
+            <div class="value">
+                <p>В предыдущем уроке мы познакомились с первой программой на Python. Теперь давайте узнаем, как работать с переменными и типами данных в Python.</p>
+                <h4>Что такое переменные?</h4>
+                <p>Переменные - это контейнеры для хранения данных. Они позволяют нам сохранять значения и обращаться к ним по именам. В Python не нужно объявлять тип переменной, он определяется автоматически на основе присвоенного значения.</p>
+                <h4>Присваивание значений переменным</h4>
+                <p>Для присваивания значения переменной используется оператор '=':</p>
+                <div class="code-bord">
+                    <p>x = 10</p>
+                    <p>name = "John"</p>
+                </div>
+                <h4>Типы данных в Python</h4>
+                <p>Python поддерживает различные типы данных, вот некоторые из них:</p>
+                <p>
+                    <li>Числа: 'int' (целые числа), 'float' (числа с плавающей запятой).</li>
+                    <li>Строки: 'str' (текстовые данные), заключенные в одинарные или двойные кавычки.</li>
+                    <li>Списки: 'list' (упорядоченные изменяемые коллекции элементов).</li>
+                    <li>Кортежи: 'tuple' (упорядоченные неизменяемые коллекции элементов).</li>
+                    <li>Словари: 'dict' (коллекции ключ-значение).</li>
+                </p>
+                <h4>Примеры использования переменных и типов данных</h4>
+                <div class="code-bord">
+                    <p># Числа</p>
+                    <p>age = 25</p>
+                    <p>height = 1.75</p>
+                    <p># Строки</p>
+                    <p>name = "Alice"</p>
+                    <p>message = 'Привет, как дела?'</p>
+                    <p># Списки</p>
+                    <p>fruits = ['яблоко', 'банан', 'апельсин']</p>
+                    <p># Кортежи</p>
+                    <p>coordinates = (10, 20)</p>
+                    <p># Словари</p>
+                    <p>person = {'имя': 'Bob', 'возраст': 30, 'город': 'Нью-Йорк'}</p>
+                </div>
+                <h4>Функция type()</h4>
+                <p>Чтобы узнать тип данных переменной, используйте функцию 'type()':</p>
+                <div class="code-bord">
+                    <p>age = 25</p>
+                    <p>print(type(age))  # Выводит <class 'int'></p>
+                    <p>name = "Alice"</p>
+                    <p>print(type(age))  # Выводит <class 'str'></p>
+                    <p>coordinates = (10, 20)</p>
+                    <p>print(type(age))  # Выводит <class 'tuple'></p>
+                </div>
+                <h4>Преобразование типов</h4>
+                <p>Иногда вам может потребоваться преобразовать данные из одного типа в другой. Для этого используются функции, такие как 'int()', 'float()', 'str()', и другие:</p>
+                <div class="code-bord">
+                    <p>x = 5</p>
+                    <p>y = "10"</p>
+                    <p>sum = x + int(y)  # Преобразуем строку "10" в целое число и складываем с x</p>
+                    <p>print(sum)   # Выводит 15</p>
+                </div>
+                <h4>Задание для практики</h4>
+                <p>
+                    <li>Создайте переменные для хранения вашего имени, возраста и любимого цвета.</li>
+                    <li>Выведите значения этих переменных на экран, объединяя их в предложении.</li>
+                </p>
+                <p>Отлично! Вы только что ознакомились с работой переменных и типов данных в Python. В следующем уроке мы продолжим исследование других концепций языка. Продолжайте практиковаться и успешного обучения!</p>
+            </div>
+            <button type="button" class="btn-next">Далее</button>
+        </div>
+    </div>
+    <div class="footer black">
+        <div class="social-media-box">
+            <div class="elements-social-media">
+                <ion-icon name="logo-vk"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-text">Copyright © 2023 CodingLearns</div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<ion-icon name="list"></ion-icon> -->
