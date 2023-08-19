@@ -245,6 +245,35 @@ nav ul li a {
 	background: #121212;
 }
 /*  */
+.btn-next {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #fff;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #FFD700;
+	background: #121212;
+}
+
+.code-bord {
+	width: 100%;
+	height: min-content;
+	padding: 20px 10px;
+	background-color: rgba(66, 62, 71, 0.15);
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.code-bord p {
+	margin: 0;
+}
+
 
 	.footer {
 		display:flex;
