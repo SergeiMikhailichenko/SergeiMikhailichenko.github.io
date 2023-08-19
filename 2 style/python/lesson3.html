@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Adaptive Header</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CodingLearns</div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <div class="content-bord">
+                    <div class="title-bord">Menu</div>
+                    <div class="line-first"></div>
+                    
+                    <li><a href="../index.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="home" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Home</div>
+                            </div>
+                        </div>
+                    </a></li>
+
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../about.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="information-circle" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">About</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="#">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="construct" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Services</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../contacts.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="share-social" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Contact</div>
+                            </div>
+                        </div>
+                    </a></li>
+                </div>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="main white">
+        <div class="elements-menu">
+            <div class="logo-lang"><ion-icon name="logo-python" style="color: #4454E5;"></ion-icon></div>
+            <div class="title">Урок 3: Условия и циклы в Python</div>
+            <div class="value">
+                <p>В предыдущих уроках мы познакомились с переменными, типами данных и написали нашу первую программу. Теперь давайте углубимся в работу с условиями и циклами, которые делают Python еще более мощным и гибким языком программирования.</p>
+                <h4>Условные операторы: if, else</h4>
+                <p>Условные операторы позволяют выполнять различные блоки кода в зависимости от определенных условий. Один из наиболее часто используемых условных операторов в Python - это 'if', который проверяет истинность некоторого выражения, и выполняет блок кода, если условие истинно:</p>
+                <div class="code-bord">
+                    <p>x = 10</p>
+                    <p>if x > 5:</p>
+                    <p class="tab">print("x больше 5")</p>
+                </div>
+                <p>Если вы хотите выполнить альтернативный блок кода в случае, если условие не выполняется, используйте 'else':</p>
+                <div class="code-bord">
+                    <p>x = 3</p>
+                    <p>if x > 5:</p>
+                    <p class="tab">print("x больше 5")</p>
+                    <p>else:</p>
+                    <p class="tab">print("x меньше или равно 5")</p>
+                </div>
+                <h4>Циклы: for, while</h4>
+                <p>Циклы позволяют выполнять повторяющиеся действия в программе. В Python есть два основных типа циклов: 'for' и 'while'.</p>
+                <p>Цикл 'for' используется для перебора элементов в последовательности, такой как список или строка:</p>
+                <div class="code-bord">
+                    <p>fruits = ['яблоко', 'банан', 'апельсин']</p>
+                    <p>for fruit in fruints:</p>
+                    <p class="tab">print(fruit)</p>
+                </div>
+                <p>Цикл 'while' выполняет блок кода, пока определенное условие истинно:</p>
+                <h4>Прерывание циклов: break, continue</h4>
+                <p>Внутри циклов вы можете использовать оператор 'break', чтобы прервать выполнение цикла, когда выполняется определенное условие:</p>
+                <div class="code-bord">
+                    <p>for i in range(1, 11):</p>
+                    <p>if i == 5:</p>
+                    <p class="tab">
+                        <p class="tab">break</p>
+                        <p>print(i)</p>
+                    </p>
+                </div>
+                <p>Оператор 'continue' используется для перехода к следующей итерации цикла, игнорируя оставшуюся часть текущей итерации:</p>
+                <div class="code-bord">
+                    <p>for i in range(1, 6):</p>
+                    <p>if i == 3:</p>
+                    <p class="tab">
+                        <p class="tab">continue</p>
+                        <p>print(i)</p>
+                    </p>
+                </div>
+                <h4>Задание для практики</h4>
+                <p>
+                    <li>Создайте список чисел от 1 до 10.</li>
+                    <li>Используя цикл 'for', выведите каждое число, умноженное на 2.</li>
+                    <li>Используя цикл 'while', найдите сумму всех чисел от 1 до 10.</li>
+                </p>
+                <p>Отлично! Вы только что изучили условия и циклы в Python. Они являются важными инструментами, которые позволяют управлять потоком выполнения программы и обрабатывать повторяющиеся задачи. Продолжайте практиковаться, и в следующем уроке мы узнаем о функциях в Python. Удачи!</p>
+            </div>
+            <button type="button" class="btn-next">Далее</button>
+        </div>
+    </div>
+    <div class="footer black">
+        <div class="social-media-box">
+            <div class="elements-social-media">
+                <ion-icon name="logo-vk"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-text">Copyright © 2023 CodingLearns</div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<ion-icon name="list"></ion-icon> -->
