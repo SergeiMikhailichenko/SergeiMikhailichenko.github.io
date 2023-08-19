@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 /* Media Query for Mobile */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 /* хеадер с меню */
 
 
@@ -222,9 +222,8 @@ nav ul li a {
 }
 
 .elements-menu .value {
-	font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Helvetica Neue,Noto Sans,Liberation Sans,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-	/* font-family: 'EB Garamond', serif; */
-	font-weight: 400;	
+	/* font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Helvetica Neue,Noto Sans,Liberation Sans,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"; */
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	font-weight: 400;	
 	font-size: 1.4rem;
 }
 /* конец */
@@ -235,12 +234,13 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-self: center;
 	font-size: 1.5rem;
 	font-weight: 400;
 	color: #fff;
-	width: 15rem;
-	height: 5.3125rem;
-	border-radius: 1.5rem;
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
 	border: 1px solid #FFD700;
 	background: #121212;
 }
