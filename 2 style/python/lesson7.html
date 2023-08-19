@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Adaptive Header</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CodingLearns</div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <div class="content-bord">
+                    <div class="title-bord">Menu</div>
+                    <div class="line-first"></div>
+                    
+                    <li><a href="../index.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="home" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Home</div>
+                            </div>
+                        </div>
+                    </a></li>
+
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../about.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="information-circle" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">About</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="#">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="construct" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Services</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../contacts.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="share-social" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Contact</div>
+                            </div>
+                        </div>
+                    </a></li>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="main white">
+        <div class="elements-menu">
+            <div class="logo-lang"><ion-icon name="logo-python" style="color: #4454E5;"></ion-icon></div>
+            <div class="title">Урок 7: Модули и стандартная библиотека Python</div>
+            <div class="value">
+                <p>В предыдущих уроках мы изучили основы языка Python, включая переменные, условия, циклы, функции, работу с файлами, списками и словарями. Теперь давайте познакомимся с модулями и стандартной библиотекой Python, которые предоставляют множество полезных функций и инструментов для различных задач.</p>
+                <h4>Что такое модули?</h4>
+                <p>Модули в Python - это файлы, содержащие определения и инструкции Python. Они позволяют организовывать код и повторно использовать его в различных программах. Модули позволяют разделять программы на логические блоки, что делает код более структурированным и удобочитаемым.</p>
+                <h4>Импорт модулей</h4>
+                <p>Для использования функций и классов из модулей, необходимо сначала выполнить их импорт. В Python импорт модуля выполняется с помощью ключевого слова 'import'.</p>
+                <div class="code-bord">
+                    <p>import math</p>
+                </div>
+                <h4>Использование функций из модулей</h4>
+                <p>После импорта модуля, вы можете использовать его функции, обращаясь к ним через имя модуля и точку.</p>
+                <div class="code-bord">
+                    <p>import math</p>
+                    <p>radius = 5</p>
+                    <p>area = math.pi * math.pow(radius, 2)</p>
+                    <p>print(area)</p>
+                    <p class="comment"># Выведет площадь круга с радиусом 5</p>
+                </div>
+                <h4>Псевдонимы для модулей</h4>
+                <p>Чтобы упростить обращение к модулю, вы можете создать псевдоним с помощью ключевого слова 'as'.</p>
+                <div class="code-bord">
+                    <p>import math as m</p>
+                    <p>radius = 5</p>
+                    <p>area = m.pi * m.pow(radius, 2)</p>
+                    <p>print(area)</p>
+                    <p class="comment"># Выведет площадь круга с радиусом 5, используя псевдоним m для модуля math</p>
+                </div>
+                <h4>Стандартная библиотека Python</h4>
+                <p>Python поставляется с обширной стандартной библиотекой, которая включает разнообразные модули для работы с файлами, сетями, датами, математическими операциями и многим другим. Нет необходимости устанавливать дополнительные модули - стандартная библиотека уже включена в Python.</p>
+                <h4>Пример использования модуля из стандартной библиотеки</h4>
+                <div class="code-bord">
+                    <p>import random</p>
+                    <p class="comment"># Генерация случайного числа от 1 до 10</p>
+                    <p>random_number = random.randint(1, 10)</p>
+                    <p>print(random_number)</p>
+                </div>
+                <h4>Задание для практики</h4>
+                <p>
+                    <li>Импортируйте модуль 'datetime' и используйте его для вывода текущей даты и времени.</li>
+                    <li>Импортируйте модуль 'random' для генерации случайного числа от 1 до 100.</li>
+                </p>
+                <p>Отлично! Теперь вы знаете о модулях и стандартной библиотеке Python. Это мощные инструменты, которые расширяют функциональность Python и помогают решать различные задачи. Продолжайте практиковаться, и в следующем уроке мы узнаем о работе с исключениями (ошибками) в Python. Удачи!</p>
+            </div>
+            <button type="button" class="btn-next">Далее</button>
+        </div>
+    </div>
+    <div class="footer black">
+        <div class="social-media-box">
+            <div class="elements-social-media">
+                <ion-icon name="logo-vk"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-text">Copyright © 2023 CodingLearns</div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<ion-icon name="list"></ion-icon> -->

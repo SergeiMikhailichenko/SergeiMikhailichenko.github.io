@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Adaptive Header</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CodingLearns</div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <div class="content-bord">
+                    <div class="title-bord">Menu</div>
+                    <div class="line-first"></div>
+                    
+                    <li><a href="../index.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="home" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Home</div>
+                            </div>
+                        </div>
+                    </a></li>
+
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../about.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="information-circle" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">About</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="#">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="construct" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Services</div>
+                            </div>
+                        </div>
+                    </a></li>
+                    
+                    <div class="line-second"></div>
+                    
+                    <li><a href="../contacts.html">
+                        <div class="lang-in-list home">
+                            <div class="logo-lang"><ion-icon name="share-social" style="color: #000;"></ion-icon></div>
+                            <div class="text-program-in-list">
+                                <div class="name-program">Contact</div>
+                            </div>
+                        </div>
+                    </a></li>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="main white">
+        <div class="elements-menu">
+            <div class="logo-lang"><ion-icon name="logo-python" style="color: #4454E5;"></ion-icon></div>
+            <div class="title">Урок 6: Списки и словари в Python</div>
+            <div class="value">
+                <p>В предыдущих уроках мы изучили основные концепции Python, включая переменные, условия, циклы, функции и работу с файлами. Теперь давайте познакомимся с двумя мощными структурами данных в Python - списками и словарями.</p>
+                <h4>Списки</h4>
+                <p>Список - это упорядоченная коллекция элементов, которые могут быть различных типов данных. В Python списки создаются с помощью квадратных скобок '[ ]' и элементы разделяются запятыми.</p>
+                <div class="code-bord">
+                    <p>fruits = ["яблоко", "банан", "апельсин", "киви"]</p>
+                    <p>fruits = [1, 2, 3, 4, 5]</p>
+                    <p>mixed_list = ["apple", 10, True]</p>
+                </div>
+                <h4>Работа со списками</h4>
+                <p>
+                    <li>Доступ к элементам: Элементы списка нумеруются с нуля. Чтобы получить доступ к элементу, используйте его индекс в квадратных скобках.</li>
+                </p>
+                <div class="code-bord">
+                    <p>fruits = ["яблоко", "банан", "апельсин"]</p>
+                    <p>print(fruits[0])</p>
+                    <p class="comment"># Выведет "яблоко"</p>
+                    <p>print(fruits[1])</p>
+                    <p class="comment"># Выведет "банан"</p>
+                </div>
+                <p>
+                    <li>Изменение элементов: Вы можете изменить элемент списка, присвоив ему новое значение.</li>
+                </p>
+                <div class="code-bord">
+                    <p>fruits = ["яблоко", "банан", "апельсин"]</p>
+                    <p>fruits[2] = "киви"</p>
+                    <p>print(fruits)</p>
+                    <p class="comment"># Выведет ["яблоко", "банан", "киви"]</p>
+                </div>
+                <p>
+                    <li>Длина списка: Чтобы узнать количество элементов в списке, используйте функцию 'len()'.</li>
+                </p>
+                <div class="code-bord">
+                    <p>fruits = ["яблоко", "банан", "апельсин"]</p>
+                    <p>print(len(fruits))</p>
+                    <p class="comment"># Выведет 3</p>
+                </div>
+                <p>
+                    <li>Добавление элементов: Добавить элемент в конец списка можно с помощью метода 'append()'.</li>
+                </p>
+                <div class="code-bord">
+                    <p>fruits = ["яблоко", "банан"]</p>
+                    <p>fruits.append("апельсин")</p>
+                    <p>print(fruits)</p>
+                    <p class="comment"># Выведет ["яблоко", "банан", "апельсин"]</p>
+                </div>
+                <h4>Словари</h4>
+                <p>Словарь - это коллекция пар "ключ-значение". В Python словари создаются с помощью фигурных скобок '{ }', и каждая пара "ключ: значение" разделяется запятой.</p>
+                <div class="code-bord">
+                    <p>person = {"имя": "Алиса", "возраст": 25, "город": "Москва"}</p>
+                </div>
+                <h4>Работа со словарями</h4>
+                <p>
+                    <li>Доступ к значениям: Чтобы получить значение по ключу, используйте квадратные скобки.</li>
+                </p>
+                <div class="code-bord">
+                    <p>person = {"имя": "Алиса", "возраст": 25, "город": "Москва"}</p>
+                    <p>print(person["имя"])</p>
+                    <p class="comment"># Выведет "Алиса"</p>
+                    <p>print(person["возраст"])</p>
+                    <p class="comment"># Выведет 25</p>
+                </div>
+                <p>
+                    <li>Изменение значений: Вы можете изменить значение, присвоив новое значение ключу.</li>
+                </p>
+                <div class="code-bord">
+                    <p>person = {"имя": "Алиса", "возраст": 25, "город": "Москва"}</p>
+                    <p>person["возраст"] = 26</p>
+                    <p>print(person)</p>
+                    <p class="comment"># Выведет {"имя": "Алиса", "возраст": 26, "город": "Москва"}</p>
+                </div>
+                <p>
+                    <li>Длина словаря: Чтобы узнать количество элементов в словаре, используйте функцию 'len()'.</li>
+                </p>
+                <div class="code-bord">
+                    <p>person = {"имя": "Алиса", "возраст": 25, "город": "Москва"}</p>
+                    <p>person["возраст"] = 26</p>
+                    <p>print(len(person))</p>
+                    <p class="comment"># Выведет 3</p>
+                </div>
+                <h4>Задание для практики</h4>
+                <p>
+                    <li>Создайте список 'numbers' с числами от 1 до 5.</li>
+                    <li>Измените второй элемент списка на 10.</li>
+                    <li>Добавьте число 6 в конец списка.</li>
+                    <li>Создайте словарь 'student' с ключами "имя", "возраст" и "город". Заполните значениями, соответствующими вашим данным.</li>
+                </p>
+                <p>Отлично! Теперь вы знаете о работе со списками и словарями в Python. Эти структуры данных предоставляют множество возможностей для хранения и обработки информации. Продолжайте практиковаться, и в следующем уроке мы узнаем о модулях и функциях стандартной библиотеки Python. Удачи!</p>
+            </div>
+            <button type="button" class="btn-next">Далее</button>
+        </div>
+    </div>
+    <div class="footer black">
+        <div class="social-media-box">
+            <div class="elements-social-media">
+                <ion-icon name="logo-vk"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-text">Copyright © 2023 CodingLearns</div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<ion-icon name="list"></ion-icon> -->
