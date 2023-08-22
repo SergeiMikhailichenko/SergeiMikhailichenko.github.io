@@ -1,11 +1,12 @@
 body {
-    margin: 0;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	background-color: #121212;
 	min-height: 100vh;
-	/* font-family: 'Love Ya Like A Sister', cursive; */
-	font-family: IBM Plex Serif;
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: 16px;
+	/* font-family: IBM Plex Serif; */
 }
 
 header {
@@ -20,28 +21,28 @@ header {
 }
 
 .logo {
-    font-size: 2rem;
+	font-size: 2rem;
     /* font-weight: bold; */
 }
 
 nav ul {
-    list-style: none;
+	list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
+	text-decoration: none;
     color: #fff;
 }
 
 .burger {
-    display: none;
+	display: none;
     flex-direction: column;
     cursor: pointer;
 	width: 40px;
@@ -55,6 +56,251 @@ nav ul li a {
     margin: 5px 0;
 }
 
+
+
+@media (min-width: 769px) {
+
+	.nav-links .content-bord {
+		font-size: 1.4rem;
+	}
+
+
+	.nav-links li {
+		position: relative;
+	}
+	
+	.nav-links a::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -6px;
+		width: 100%;
+		height: 3px;
+		background: #fff;
+		border-radius: 5px;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform .5s;
+	}
+	
+	.nav-links a:hover::after {
+		transform-origin: left;
+		transform: scaleX(1);
+	
+	}
+
+	header .content-bord {
+		display: flex;
+	}
+	
+	.main {
+		flex: .95;
+		width: 80%;
+		align-self: center;
+		height: 100%;
+	}
+
+	.main .content-bord {
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	
+		font-weight: 400;	
+	}
+	
+	.main .content-bord .name-program {
+		font-size: 1.2rem;
+	}
+	
+	.main .content-bord .value-program {
+		font-size: .9rem;
+	}
+
+	/* elements hide */
+	.main .title-bord, .line-first, .line-second {
+		display: none;
+	}
+	
+	header .logo-lang {
+		display: none;
+	}
+	
+	header .title-bord {
+		display: none;
+	}
+	
+	header .line-first {
+		display: none;
+	}
+	
+	header .line-second {
+		display: none;
+	}
+	/* end elements hide */
+	
+	.main .content-bord .lang-in-list {
+		height: 200px;
+		width: 200px;
+		background-color: #423E47;
+		border-radius: 20px;
+		padding: 1rem;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	.main .content-bord .lang-in-list .logo-lang {
+		align-self: center;
+		font-size: 5rem;
+	}
+	
+	.main .lang-in-list:hover {
+		box-shadow: 0 0 10px rgb(255, 255, 255);
+	}
+	
+	
+	.footer {
+		display:flex;
+		color: #fff;
+		padding-top: 30px;
+    	padding-bottom: 20px;
+
+		justify-content: center;
+		height: 100%;
+
+		width: 80%;
+		align-self: center;
+		height: 100%;
+	}
+
+	.footer.black {
+		color: #000;
+		background-color: #FFFFFF;
+	}
+
+	.elements-social-media {
+		display: flex;
+		justify-content: space-around;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.footer-text {
+		font-family: 'Love Ya Like A Sister', cursive;
+		font-size: 1rem;
+	}
+
+
+	.main {
+		flex: 1;
+	}
+
+	.main.white {
+		background-color: #FFFFFF;
+	}
+
+	.logo-lang {
+		display: flex;
+		font-size: 2rem;
+		align-items: center;
+		margin-right: 20px;
+	}
+
+
+/* Элементы меню */
+.elements-menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	justify-content: center;
+	background-color: #FFFFFF;
+	height: min-content;
+	width: 80%;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 30px 0;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	
+	font-weight: 400;	
+}
+
+.elements-menu .title {
+	font-size: 2rem;
+}
+
+.elements-menu .value {
+	font-size: 1.4rem;
+}
+
+/* Кнопка старта обучения */
+.btn-start {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #fff;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #FFD700;
+	background: #121212;
+	cursor: pointer;
+}
+/*  */
+.btn-next {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #fff;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #FFD700;
+	background: #121212;
+	cursor: pointer;
+}
+
+.code-bord {
+	width: 100%;
+	height: min-content;
+	padding: 20px 10px;
+	background-color: rgba(66, 62, 71, 0.15);
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.code-bord p {
+	margin: 0;
+}
+
+.code-bord .tab {
+	margin-left: 3rem;
+}
+
+.code-bord .comment {
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+	
+}
 /* Media Query for Mobile */
 @media (max-width: 768px) {
 /* хеадер с меню */
@@ -97,7 +343,7 @@ nav ul li a {
 		/* gap: 3rem; */
 		/* font-size: 3rem; */
 		z-index: 888;
-		flex: 2;
+		/* flex: .95; */
     }
 
 	.main.deactive {
@@ -192,7 +438,7 @@ nav ul li a {
 	}
 
 	.main {
-		flex: 1;
+		flex: .95;
 	}
 	
 	.main.white {
@@ -213,17 +459,15 @@ nav ul li a {
 	border-radius: 20px;
 	padding: 10px;
 	margin: 30px 0;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	
+	font-weight: 400;	
 }
 
 .elements-menu .title {
 	font-size: 2rem;
-	font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Helvetica Neue,Noto Sans,Liberation Sans,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-	font-weight: 400;	
 }
 
 .elements-menu .value {
-	/* font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Helvetica Neue,Noto Sans,Liberation Sans,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"; */
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	font-weight: 400;	
 	font-size: 1.4rem;
 }
 /* конец */
