@@ -170,7 +170,7 @@ nav ul li a {
 		justify-content: center;
 		height: 100%;
 
-		width: 80%;
+		width: 100%;
 		align-self: center;
 		height: 100%;
 	}
@@ -199,6 +199,7 @@ nav ul li a {
 
 	.main.white {
 		background-color: #FFFFFF;
+		width: 100%;
 	}
 
 	.logo-lang {
