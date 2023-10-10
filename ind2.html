@@ -8,28 +8,28 @@
         .hidden-translation {
             display: none;
         }
-    </style>
-    <script>
-        // Функция для отображения перевода при клике на предложение
-        function showTranslation(sentenceNumber) {
-            const translation = document.getElementById(`translation-${sentenceNumber}`);
-            translation.style.display = 'block';
+
+        /* Стиль для активных (нажимаемых) предложений */
+        .clickable-sentence {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
         }
-    </script>
+    </style>
 </head>
 <body>
     <h1>Заголовок статьи</h1>
     <img src="ссылка_на_картинку.jpg" alt="Картинка статьи">
 
     <div class="article">
-        <p onclick="showTranslation(1)">This is the first sentence of the article.</p>
-        <p id="translation-1" class="hidden-translation">Это первое предложение статьи.</p>
+        <p class="clickable-sentence">This is the first sentence of the article.</p>
+        <p class="hidden-translation">Это первое предложение статьи.</p>
 
-        <p onclick="showTranslation(2)">Here is the second sentence.</p>
-        <p id="translation-2" class="hidden-translation">Вот второе предложение.</p>
+        <p class="clickable-sentence">Here is the second sentence.</p>
+        <p class="hidden-translation">Вот второе предложение.</p>
 
-        <p onclick="showTranslation(3)">And this is the third sentence.</p>
-        <p id="translation-3" class="hidden-translation">А это третье предложение.</p>
+        <p class="clickable-sentence">And this is the third sentence.</p>
+        <p class="hidden-translation">А это третье предложение.</p>
     </div>
 </body>
 </html>
