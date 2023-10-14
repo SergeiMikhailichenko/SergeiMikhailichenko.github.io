@@ -133,7 +133,7 @@ nav ul li a {
 }
 
 .workplace h1 {
-	margin: 40px 0 40px;
+	margin: 60px 0 40px;
 	color: #fff;
 	text-align: center;
 	font-size: 1.5rem;
@@ -154,7 +154,21 @@ nav ul li a {
 }
 
 .service_block .service_text {
+	position: relative;
 	width: 45%;
+}
+.service_block .service_text .smart_home_page_button {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 150px;
+	height: 50px;
+	font-size: 1rem;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	margin-top: 40px;
+	border: 1px solid #3d3c3c;
+	border-radius: 5px;
 }
 
 .service_block .service_text h2 {
@@ -174,27 +188,17 @@ nav ul li a {
 	margin: 3px;
 }
 
-.smart_home_page_button {
-	width: 188px;
-	height: 50px;
-	font-family: 'Comfortaa', cursive;
-	font-weight: 700;
-	margin-top: 40px;
-	border: 1px solid #3d3c3c;
-	border-radius: 10px;
-}
-
 .carousel {
 	width: 45%;
 	overflow: hidden;
 }
 
 .carousel img {
-	height: 400px;
+	height: 350px;
 	width: 100%;
 	object-fit: cover;
 	border: 1px solid #3d3c3c;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .grey_block {
@@ -263,6 +267,8 @@ nav ul li a {
 
 .carousel_5 {
 	/* width: 190px; */
+	display: flex;
+	justify-content: space-around;
 	margin-bottom: 80px;
 	
 }
@@ -285,8 +291,9 @@ nav ul li a {
 }
 
 .ppl_card {
-	/* height: 300px;
-	width: 370px; */
+	position: relative;
+	height: 306px;
+	width: 244px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -295,10 +302,13 @@ nav ul li a {
 }
 
 .ppl_card img {
+	position: relative;
+	margin: 0px;
 	height: 120px;
 	width: 120px;
 	border-radius: 50%;
 	object-fit: cover;
+	left: calc(50% - 60px);
 }
 
 .ppl_card h3 {
@@ -323,6 +333,7 @@ nav ul li a {
 	position: relative;
 	height: 532px;
 	width: 400px;
+	margin: 50px;
 	/* display: flex; */
 	/* background-color: #d9d9d9; */
 	/* display: flex; */
@@ -384,7 +395,7 @@ nav ul li a {
 
 .carousel_review {
 	height: min-content;
-	width: 400px;
+	width: 900px;
 }
 
 .wrap_corp {
