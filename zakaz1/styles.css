@@ -583,9 +583,9 @@ nav ul li a {
 		display: block;
 	}
 	
-	.dropdown-content a:hover {
-		/* background-color: #ffffff; Цвет фона при наведении на элемент подменю */
-	}
+	/* .dropdown-content a:hover {
+		background-color: #ffffff; Цвет фона при наведении на элемент подменю
+	} */
 	
 
 
