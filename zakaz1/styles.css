@@ -29,6 +29,7 @@ header {
 	display: flex;
     align-items: center;
 	font-size: 0.6rem;
+	font-weight: 900;
 	/* margin: 0px 0px 0px 50px; */
 }
 
@@ -89,7 +90,7 @@ nav ul li a {
 	justify-content: flex-end;
 	align-items: start;
 	flex-direction: column;
-	font-family: 'Arial';
+	font-family: 'Comfortaa', cursive;
 }
 
 .full-screen__title {
@@ -126,7 +127,7 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #3d3c3c; /* Горизонтальная линия между элементами подменю */
-	padding-bottom: 40px;
+	/* padding-bottom: 10px; */
 }
 
 .workplace {
@@ -150,8 +151,8 @@ nav ul li a {
 	margin: 40px 0 40px;
 	color: #000;
 	text-align: center;
-	font-size: 44px;
-	font-weight:900;
+	font-size: 38px;
+	font-weight: 700;
 }
 
 .service_block {
@@ -171,6 +172,20 @@ nav ul li a {
 }
 .service_block .service_text .smart_home_page_button {
 	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 170px;
+	height: 40px;
+	font-size: 1rem;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	margin-top: 40px;
+	border: 1px solid #3d3c3c;
+	border-radius: 10px;
+}
+
+.sert_button {
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 170px;
@@ -225,7 +240,7 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #3d3c3c; /* Горизонтальная линия между элементами подменю */
-	padding-bottom: 40px;
+	/* padding-bottom: 10px; */
 }
 
 .light_grey_block {
@@ -243,13 +258,14 @@ nav ul li a {
 	/* margin-bottom: 40px; */
 }
 .about_block2 {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
 	background-color: #00000051;
 	border-radius: 5px;
 	padding: 20px;
-	
+	border: 1px solid #3d3c3c;
 	/* margin-bottom: 40px; */
 }
 .about_block2 h2 {
@@ -263,14 +279,15 @@ nav ul li a {
 }
 
 .about_block .text_block {
-	width: 45%;
+	
+	width: calc(50% - 50px);
 	/* display: flex;
 	justify-content: space-between; */
 	margin-bottom: 20px;
 	background-color: #00000051;
 	border-radius: 5px;
 	padding: 20px;
-	/* border: 1px solid #3d3c3c; */
+	border: 1px solid #3d3c3c;
 }
 
 .about_block .text_block h2 {
@@ -290,7 +307,10 @@ nav ul li a {
 .about_block .text_block p {
 	color: #fff;
 	font-size: 16px;
-	/* line-height: 23px; */
+	font-weight: 200;
+	/* margin: 5px; */
+	line-height: 23px;
+	font-family: 'Comfortaa', cursive;
 	margin-bottom: 40px;
 	/* margin: 0; */
 }
@@ -313,7 +333,7 @@ nav ul li a {
 
 .black_foto {
 	/* background-color: #000000; */
-	height: 230px;
+	/* height: 230px; */
 	width: 280px;
 	margin-bottom: 80px;
 }
@@ -323,7 +343,7 @@ nav ul li a {
 	/* height: 100%; */
 	/* display: flex; */
 	/* justify-content: space-around; */
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 	
 
 	
@@ -356,9 +376,10 @@ nav ul li a {
 	margin: 20px;
 	background-color: #00000051;
 	border-radius: 5px;
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 	/* padding: 30px; */
 	/* color: #fff; */
+	border: 1px solid #3d3c3c;
 }
 
 .wrap_ppls .ppl_card img {
@@ -411,7 +432,7 @@ nav ul li a {
 	/* flex-direction: column; */
 	/* justify-content: center; */
 	/* align-items: center; */
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 }
 
 .wrap_reviews .ppl_review img {
@@ -481,13 +502,13 @@ nav ul li a {
 	justify-content: center;
 	align-items: center;
 	width: 300px;
-	height: 300px;
+	height: 150px;
 	/* background-color: #fbf8ff; */
 }
 
 .corp_block img {
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 150px;
+	max-height: 50px;
 }
 
 .lineX {
@@ -503,9 +524,9 @@ nav ul li a {
 .lineY {
 	position: absolute;
 	left: 0px;
-	top: calc(50% - 75px);
+	top: calc(50% - 37px);
 	width: 1px;
-	height: 150px;
+	height: 75px;
 	background-color: #514D56;
 	/* margin: 10px 0;	 */
 }
@@ -552,8 +573,13 @@ nav ul li a {
 	border-radius: 10px;
 }
 
+.about_block img {
+	width: 100%;
+}
 
-
+.feedback_text img {
+	width: 100%;
+}
 
 
 
@@ -661,7 +687,7 @@ nav ul li a {
 	header .nav-links .dropdown-content a {
 		/* transform: none; */
 		text-decoration: none;
-		color: #c3bcbc; /* Цвет текста в подменю */
+		color: #fff; /* Цвет текста в подменю */
 		display: block;
 	}
 	
